@@ -21,7 +21,7 @@ network-manager-gnome
 network-manager
 wpasupplicant
 sudo
-papirus-teal-icon-theme
 papirus-icon-theme
 orchis-gtk-theme
+islamic-menus
 --no-install-recommends
