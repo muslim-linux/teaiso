@@ -6,7 +6,7 @@ grub-efi-ia32-bin
 efibootmgr
 linux-image-amd64
 gnome-themes-extra
-xfce4
+cinnamon-desktop-environment
 xserver-xorg
 lightdm
 lightdm-gtk-greeter
@@ -15,15 +15,13 @@ pavucontrol
 pulseaudio
 ca-certificates
 chromium
-xfce4-terminal
 xdg-user-dirs
-xarchiver
-mousepad
 p7zip-full
 network-manager-gnome
 network-manager
-blueman
 wpasupplicant
-xfce4-whiskermenu-plugin
 sudo
+papirus-teal-icon-theme
+papirus-icon-theme
+orchis-gtk-theme
 --no-install-recommends

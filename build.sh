@@ -6,6 +6,5 @@ apt install xorriso grub-pc-bin grub-efi mtools make python3 \
 git clone https://gitlab.com/tearch-linux/applications-and-tools/teaiso
 cd teaiso
 make && make install
-ln -s sid /usr/share/debootstrap/scripts/yirmibir || true
 cd ../
-mkteaiso --profile=./aleyna --output=/output/ --debug 2>&1
+mkteaiso --profile=./muslim --output=/output/ --debug 2>&1
