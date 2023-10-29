@@ -23,5 +23,5 @@ install /usr/share/icons/hicolor/0x0/apps/muezzin.png /usr/share/icons/hicolor/5
 gtk-update-icon-cache /usr/share/icons/hicolor/
 
 # install flatpak
-apt install flatpak gnome-software-plugin-flatpak
+apt install flatpak gnome-software-plugin-flatpak -yq
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
