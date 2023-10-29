@@ -20,3 +20,4 @@ apt install ./*.deb -yq --allow-downgrades
 
 # fix muezzin icon
 install /usr/share/icons/hicolor/0x0/apps/muezzin.png /usr/share/icons/hicolor/512x512/apps/muezzin.png
+gtk-update-icon-cache /usr/share/icons/hicolor/
