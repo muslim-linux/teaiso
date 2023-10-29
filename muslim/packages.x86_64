@@ -12,7 +12,7 @@ lightdm
 lightdm-gtk-greeter
 xinit
 pavucontrol
-pulseaudio
+pipewire
 ca-certificates
 chromium
 xdg-user-dirs
@@ -21,6 +21,8 @@ network-manager-gnome
 network-manager
 wpasupplicant
 sudo
+pciutils
+file-roller
 papirus-icon-theme
 orchis-gtk-theme
 islamic-menus
