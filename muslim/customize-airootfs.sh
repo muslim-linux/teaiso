@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 cd /tmp
 
+set -ex
+
 ### Instally 17g and other stuff
 apt install wget
 wget https://github.com/muslim-linux/base-files/releases/download/current/base-files_9999-noupdate_amd64.deb
@@ -21,7 +23,3 @@ apt install ./*.deb -yq --allow-downgrades
 # fix muezzin icon
 install /usr/share/icons/hicolor/0x0/apps/muezzin.png /usr/share/icons/hicolor/512x512/apps/muezzin.png
 gtk-update-icon-cache /usr/share/icons/hicolor/
-
-# install flatpak
-apt install flatpak gnome-software-plugin-flatpak -yq
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
