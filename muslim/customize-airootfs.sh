@@ -9,6 +9,9 @@ wget https://github.com/pardus-nosystemd/desktop-base/releases/download/current/
 wget https://github.com/muslim-linux/muslim-backgrounds/releases/download/current/muslim-backgrounds_1.0_all.deb
 # install quran app
 wget https://github.com/DBChoco/Muezzin/releases/download/v2.6.0/muezzin_2.6.0_amd64.deb
+# fix muezzin icon
+install /usr/share/icons/hicolor/0x0/apps/muezzin.png /usr/share/icons/hicolor/512x512/apps/muezzin.png
+
 apt install ./*.deb -yq --allow-downgrades
 
 #### Disable recommends by default
