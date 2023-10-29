@@ -17,7 +17,7 @@ jobs:
             uses: addnab/docker-run-action@v3
             with:
                 image: debian:testing
-                options: -v ${{ github.workspace }}:/root -v /output:/output
+                options: -v ${{ github.workspace }}:/root -v /proc:/proc -v /output:/output
                 run: |
                     cd /root
                     bash build.sh
