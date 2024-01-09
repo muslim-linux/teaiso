@@ -21,6 +21,11 @@ EOF
 wget https://github.com/DBChoco/Muezzin/releases/download/v2.6.0/muezzin_2.6.0_amd64.deb
 apt install ./*.deb -yq --allow-downgrades
 
+#### fix eudev sed bug about usrmerge shit
+# install busybox into /bin as symlink
+apt install busybox-static -yq 
+/bin/busybox --install -s /bin
+
 # fix muezzin icon
 install /usr/share/icons/hicolor/0x0/apps/muezzin.png /usr/share/icons/hicolor/512x512/apps/muezzin.png
 gtk-update-icon-cache /usr/share/icons/hicolor/
