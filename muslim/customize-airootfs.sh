@@ -24,7 +24,7 @@ apt install ./*.deb -yq --allow-downgrades
 #### fix eudev sed bug about usrmerge shit
 # install busybox into /bin as symlink
 apt install busybox-static -yq 
-/bin/busybox --install -s /bin
+busybox --install -s /bin
 
 # fix muezzin icon
 install /usr/share/icons/hicolor/0x0/apps/muezzin.png /usr/share/icons/hicolor/512x512/apps/muezzin.png
