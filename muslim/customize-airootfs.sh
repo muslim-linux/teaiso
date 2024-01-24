@@ -10,6 +10,7 @@ wget https://github.com/muslim-linux/base-files/releases/download/current/base-f
 wget https://github.com/muslim-linux/17g-installer/releases/download/current/17g-installer_1.0_all.deb
 wget https://github.com/pardus-nosystemd/desktop-base/releases/download/current/desktop-base_9999-noupdate_all.deb
 wget https://github.com/muslim-linux/muslim-backgrounds/releases/download/current/muslim-backgrounds_1.0_all.deb
+wget https://github.com/aleyna-tilki/pipewire-launcher/releases/download/current/pipewire-launcher_1.0.0_all.deb
 
 #### Disable recommends by default
 cat > /etc/apt/apt.conf.d/01norecommend << EOF
