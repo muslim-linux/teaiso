@@ -14,6 +14,8 @@ lightdm-gtk-greeter
 xinit
 pavucontrol
 pipewire
+wireplumber
+pipewire-pulse
 ca-certificates
 chromium
 xdg-user-dirs
