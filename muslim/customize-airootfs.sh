@@ -4,6 +4,10 @@ cd /tmp
 export OSTREE_BOOTID="$(echo $RANDOM | md5sum -)"
 set -ex
 
+
+#### non-usrmerge broken
+yes | apt install --reinstall usrmerge -y
+
 ### Instally 17g and other stuff
 yes | apt install wget
 wget https://github.com/muslim-linux/base-files/releases/download/current/base-files_9999-noupdate_amd64.deb
@@ -22,8 +26,6 @@ EOF
 wget https://github.com/DBChoco/Muezzin/releases/download/v2.6.0/muezzin_2.6.0_amd64.deb
 yes | apt install ./*.deb -yq --allow-downgrades
 
-#### non-usrmerge broken
-yes | apt install --reinstall usrmerge -y
 
 # fix muezzin icon
 install /usr/share/icons/hicolor/0x0/apps/muezzin.png /usr/share/icons/hicolor/512x512/apps/muezzin.png
